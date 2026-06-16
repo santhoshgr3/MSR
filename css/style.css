@@ -1436,11 +1436,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 60px;
 }
 
+.political-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
 .service-detail-card {
   background: var(--card-bg);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: 44px 40px;
+  padding: 40px 36px;
   position: relative;
   overflow: hidden;
   transition: var(--transition);
@@ -1933,6 +1941,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .services-grid { grid-template-columns: 1fr; }
   .services-detail-grid { grid-template-columns: 1fr; }
+  .political-grid { grid-template-columns: 1fr; gap: 32px; }
   .grid-2 { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: 1fr; }
   .mission-grid { grid-template-columns: 1fr; }
@@ -1989,6 +1998,17 @@ h1, h2, h3, h4, h5, h6 {
 
   .services-grid { grid-template-columns: 1fr; gap: 20px; }
   .service-card-img { height: 200px; }
+
+  .services-detail-grid { grid-template-columns: 1fr; gap: 18px; }
+  .political-grid { grid-template-columns: 1fr; gap: 24px; }
+  .service-detail-card { padding: 26px 20px; }
+  .service-detail-card h3 { font-size: 1.05rem; }
+
+  .page-hero { padding: calc(var(--nav-height) + 16px) 0 36px; }
+  .page-hero-content h1 { font-size: clamp(1.6rem, 6vw, 2.4rem) !important; }
+  .page-hero-content p { font-size: 0.88rem; }
+
+  .section-pad { padding: 60px 0; }
 
   .industries-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .industry-card-img { height: 130px; }
